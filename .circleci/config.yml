@@ -37,5 +37,5 @@ jobs:
            command: yarn build
       - run: # run code coverage report
           name: code-coverage
-          command: yarn coveralls
+          command: yarn run coveralls
       # - coveralls/upload
