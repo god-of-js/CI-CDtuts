@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "test:unit": "nyc vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls" 
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "coveralls": "^3.1.0",
+    "nyc": "^15.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
