@@ -32,9 +32,9 @@ jobs:
       - run: # run tests
           name: test
           command: yarn test:unit
-      - run: # run code coverage report
-          name: code-coverage
-          command: yarn run coveralls
+      # - run: # run code coverage report
+      #     name: code-coverage
+      #     command: yarn run coveralls
       - run: 
-           name: build
+           name: Build
            command: yarn build
